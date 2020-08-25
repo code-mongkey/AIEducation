@@ -28,9 +28,11 @@ def forward(network,x):
     
     neuron1 = np.dot(x, w1) + b1
     activation1 = sigmoid(neuron1)
+    print(activation1)
 
     neuron2 = np.dot(activation1, w2) + b2
     activation2 = sigmoid(neuron2)
+    print(activation2)
 
     neuron3 = np.dot(activation2, w3) + b3
     print_result = neuron3
